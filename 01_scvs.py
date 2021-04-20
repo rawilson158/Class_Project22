@@ -1,4 +1,3 @@
-import json
 import csv
 
 with open ("health_scvs.csv", "r") as f:
