@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e0db32876f2e43afae19c4b3df3d3e1e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_e0db32876f2e43afae19c4b3df3d3e1e" ></div>
+        
+</body>
+<script>    
+    
+            var map_e0db32876f2e43afae19c4b3df3d3e1e = L.map(
+                "map_e0db32876f2e43afae19c4b3df3d3e1e",
+                {
+                    center: [40.682097, -73.896606],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+
+            
+
+        
+    
+            var tile_layer_4ce47a674d2a4855999b40e5ef228608 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+            var marker_468d8a3af031469dbe8c11901bfaebae = L.marker(
+                [40.811911, -73.920396],
+                {}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+        var popup_1e881369153e43c1adff0c507e5f7bd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_72a16d7b7e9f462a87d9f48793df8968 = $(`<div id="html_72a16d7b7e9f462a87d9f48793df8968" style="width: 100.0%; height: 100.0%;"><strong>Abraham House - Transitional Housing</strong></div>`)[0];
+            popup_1e881369153e43c1adff0c507e5f7bd3.setContent(html_72a16d7b7e9f462a87d9f48793df8968);
+        
+
+        marker_468d8a3af031469dbe8c11901bfaebae.bindPopup(popup_1e881369153e43c1adff0c507e5f7bd3)
+        ;
+
+        
+    
+    
+            marker_468d8a3af031469dbe8c11901bfaebae.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_099697798f5948dca98b51692f7872f7 = L.marker(
+                [40.76, -73.94],
+                {}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+        var popup_c70f42759e07495d9ee492d9a7d4c351 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9190832ba3f847c4acfc8d063a2d5ad9 = $(`<div id="html_9190832ba3f847c4acfc8d063a2d5ad9" style="width: 100.0%; height: 100.0%;"><strong>Hour Children - Communal Housing for Women & Children</strong></div>`)[0];
+            popup_c70f42759e07495d9ee492d9a7d4c351.setContent(html_9190832ba3f847c4acfc8d063a2d5ad9);
+        
+
+        marker_099697798f5948dca98b51692f7872f7.bindPopup(popup_c70f42759e07495d9ee492d9a7d4c351)
+        ;
+
+        
+    
+    
+            marker_099697798f5948dca98b51692f7872f7.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d90b1086528c4c50a62bca65f088d6c4 = L.marker(
+                [40.828331, -73.951329],
+                {}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+            var icon_75ab9fc92d4f4d5cbf1d3a9cefb64b8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d90b1086528c4c50a62bca65f088d6c4.setIcon(icon_75ab9fc92d4f4d5cbf1d3a9cefb64b8a);
+        
+    
+        var popup_41e362ac4bed4849addcfdd3b3431a7b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_16f0d33d45a54045b622b210fbaa693e = $(`<div id="html_16f0d33d45a54045b622b210fbaa693e" style="width: 100.0%; height: 100.0%;"><strong>Fortune Society - Permanent/ Scatter-Site</strong></div>`)[0];
+            popup_41e362ac4bed4849addcfdd3b3431a7b.setContent(html_16f0d33d45a54045b622b210fbaa693e);
+        
+
+        marker_d90b1086528c4c50a62bca65f088d6c4.bindPopup(popup_41e362ac4bed4849addcfdd3b3431a7b)
+        ;
+
+        
+    
+    
+            marker_d90b1086528c4c50a62bca65f088d6c4.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b020170ee57641479ea9581dc0db8ca8 = L.marker(
+                [40.788622, -73.945634],
+                {}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+            var icon_bece728275e34ad49fc0afc49ca394de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_b020170ee57641479ea9581dc0db8ca8.setIcon(icon_bece728275e34ad49fc0afc49ca394de);
+        
+    
+        var popup_a5bee1595e884b768bd3dea4b692ff53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d2670fd7c4174988bd656fcefb614002 = $(`<div id="html_d2670fd7c4174988bd656fcefb614002" style="width: 100.0%; height: 100.0%;"><strong>DOE Fund - Single Apts & Dorms</strong></div>`)[0];
+            popup_a5bee1595e884b768bd3dea4b692ff53.setContent(html_d2670fd7c4174988bd656fcefb614002);
+        
+
+        marker_b020170ee57641479ea9581dc0db8ca8.bindPopup(popup_a5bee1595e884b768bd3dea4b692ff53)
+        ;
+
+        
+    
+    
+            marker_b020170ee57641479ea9581dc0db8ca8.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c0e7cb29cb14ac39a7ca960c84478b1 = L.marker(
+                [40.659026, -73.95021],
+                {}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+            var icon_0c5d18c74b0c4772a1ec67f8a662bfeb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8c0e7cb29cb14ac39a7ca960c84478b1.setIcon(icon_0c5d18c74b0c4772a1ec67f8a662bfeb);
+        
+    
+        var popup_fa292a4292ab4a13a065ed71f341ad8b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bcbf2ae2f9374e00b48936c90a75c0ef = $(`<div id="html_bcbf2ae2f9374e00b48936c90a75c0ef" style="width: 100.0%; height: 100.0%;"><strong>LGBTQ - Health Services</strong></div>`)[0];
+            popup_fa292a4292ab4a13a065ed71f341ad8b.setContent(html_bcbf2ae2f9374e00b48936c90a75c0ef);
+        
+
+        marker_8c0e7cb29cb14ac39a7ca960c84478b1.bindPopup(popup_fa292a4292ab4a13a065ed71f341ad8b)
+        ;
+
+        
+    
+    
+            marker_8c0e7cb29cb14ac39a7ca960c84478b1.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f234b1c7081a46b185acd62064181438 = L.marker(
+                [40.796534, -73.9313],
+                {}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+            var icon_5351732a06444c1b8d1c5cb722f5cd51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f234b1c7081a46b185acd62064181438.setIcon(icon_5351732a06444c1b8d1c5cb722f5cd51);
+        
+    
+        var popup_4de55cfa0c244f0aaf973f3adff8d4cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6e3984b31f1a4c16af0e7d4b03a42175 = $(`<div id="html_6e3984b31f1a4c16af0e7d4b03a42175" style="width: 100.0%; height: 100.0%;"><strong>Acacia Network - Short-term housing for wormen</strong></div>`)[0];
+            popup_4de55cfa0c244f0aaf973f3adff8d4cb.setContent(html_6e3984b31f1a4c16af0e7d4b03a42175);
+        
+
+        marker_f234b1c7081a46b185acd62064181438.bindPopup(popup_4de55cfa0c244f0aaf973f3adff8d4cb)
+        ;
+
+        
+    
+    
+            marker_f234b1c7081a46b185acd62064181438.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8a628ccce578437b8d258d8f5a81f896 = L.marker(
+                [40.689352, -73.983035],
+                {}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+        var popup_b325a2ba28024a609d442227e21f4d8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6f13743587c14e37a4814813eff820e4 = $(`<div id="html_6f13743587c14e37a4814813eff820e4" style="width: 100.0%; height: 100.0%;"><strong>Workforce1 Career Center - Downtown Brooklyn</strong></div>`)[0];
+            popup_b325a2ba28024a609d442227e21f4d8a.setContent(html_6f13743587c14e37a4814813eff820e4);
+        
+
+        marker_8a628ccce578437b8d258d8f5a81f896.bindPopup(popup_b325a2ba28024a609d442227e21f4d8a)
+        ;
+
+        
+    
+    
+            marker_8a628ccce578437b8d258d8f5a81f896.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9fc89b3792774aa39a15b54ecf01d408 = L.marker(
+                [40.685738, -73.97355],
+                {}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+        var popup_c53d608699024ada89a63fa54b4ed507 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cd494f491af8455690700b58fc87349d = $(`<div id="html_cd494f491af8455690700b58fc87349d" style="width: 100.0%; height: 100.0%;"><strong>Brooklyn Tech. HS - Primary Edu</strong></div>`)[0];
+            popup_c53d608699024ada89a63fa54b4ed507.setContent(html_cd494f491af8455690700b58fc87349d);
+        
+
+        marker_9fc89b3792774aa39a15b54ecf01d408.bindPopup(popup_c53d608699024ada89a63fa54b4ed507)
+        ;
+
+        
+    
+    
+            marker_9fc89b3792774aa39a15b54ecf01d408.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ba997f66718497cada6c8b174d5c9a1 = L.marker(
+                [40.705132, -74.009258],
+                {}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+            var icon_417c210a46d4463c96a25d0b63421306 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_8ba997f66718497cada6c8b174d5c9a1.setIcon(icon_417c210a46d4463c96a25d0b63421306);
+        
+    
+        var popup_48c049b5bcf64ae1b8dd2e8e92c6c5c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_80c76adf8c774e3f800c18b9b26f7d6f = $(`<div id="html_80c76adf8c774e3f800c18b9b26f7d6f" style="width: 100.0%; height: 100.0%;"><strong>Fullstack Academy Inc - Software Coding</strong></div>`)[0];
+            popup_48c049b5bcf64ae1b8dd2e8e92c6c5c0.setContent(html_80c76adf8c774e3f800c18b9b26f7d6f);
+        
+
+        marker_8ba997f66718497cada6c8b174d5c9a1.bindPopup(popup_48c049b5bcf64ae1b8dd2e8e92c6c5c0)
+        ;
+
+        
+    
+    
+            marker_8ba997f66718497cada6c8b174d5c9a1.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_206db0a532fa41fb84faef2f7eb208ca = L.marker(
+                [40.656583, -73.94471],
+                {}
+            ).addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        
+    
+            var icon_1fc78a3c829446d1b5ac6d0545846ef3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_206db0a532fa41fb84faef2f7eb208ca.setIcon(icon_1fc78a3c829446d1b5ac6d0545846ef3);
+        
+    
+        var popup_2139fb1242ef414c9b1ea4abbf3c5736 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e7e9e6d1f42d4f5293ef7bf674d0bbb4 = $(`<div id="html_e7e9e6d1f42d4f5293ef7bf674d0bbb4" style="width: 100.0%; height: 100.0%;"><strong>Healthfirst - Health Insurance</strong></div>`)[0];
+            popup_2139fb1242ef414c9b1ea4abbf3c5736.setContent(html_e7e9e6d1f42d4f5293ef7bf674d0bbb4);
+        
+
+        marker_206db0a532fa41fb84faef2f7eb208ca.bindPopup(popup_2139fb1242ef414c9b1ea4abbf3c5736)
+        ;
+
+        
+    
+    
+            marker_206db0a532fa41fb84faef2f7eb208ca.bindTooltip(
+                `<div>
+                     Click For More Info
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+
+        function geo_json_57434bed793f41fd828a6e3a336277ac_onEachFeature(feature, layer) {
+            layer.on({
+            });
+        };
+        var geo_json_57434bed793f41fd828a6e3a336277ac = L.geoJson(null, {
+                onEachFeature: geo_json_57434bed793f41fd828a6e3a336277ac_onEachFeature,
+            
+        });
+
+        function geo_json_57434bed793f41fd828a6e3a336277ac_add (data) {
+            geo_json_57434bed793f41fd828a6e3a336277ac
+                .addData(data)
+                .addTo(map_e0db32876f2e43afae19c4b3df3d3e1e);
+        }
+            geo_json_57434bed793f41fd828a6e3a336277ac_add({"features": [{"geometry": {"coordinates": [[[-73.90708923339844, 40.924927332167655], [-73.92837524414061, 40.87562221882569], [-73.94485473632812, 40.84861859343548], [-74.00871276855469, 40.75453936473234], [-74.01695251464844, 40.70406634324247], [-74.036865234375, 40.60821853973967], [-73.97918701171875, 40.58267063809529], [-73.93661499023436, 40.57849862511043], [-73.90090942382812, 40.6113461833302], [-73.83293151855469, 40.65303410892721], [-73.72787475585938, 40.71551718935035], [-73.82331848144531, 40.852254338121625], [-73.82469177246094, 40.89067715064627], [-73.90708923339844, 40.924927332167655]]], "type": "Polygon"}, "properties": {}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+</script>
