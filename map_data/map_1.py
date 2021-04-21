@@ -3,7 +3,7 @@ import requests
 import os
 
 # Create map object
-m = folium.Map(location=[40.682097, -73.896606], zoom_start=12) 
+m = folium.Map(location=[40.682097, -73.896606], zoom_start=12, control_scale=True) 
 
 
 # Global Tooltip
@@ -45,10 +45,21 @@ folium.Marker([40.796534, -73.9313],
                popup="<strong>Acacia Network - Short-term housing for wormen</strong>",
                tooltip=tooltip,
                icon=folium.Icon(icon='cloud')).add_to(m),
+folium.Marker([40.689352, -73.983035], 
+               popup="<strong>Workforce1 Career Center - Downtown Brooklyn</strong>",
+               tooltip=tooltip).add_to(m), 
+folium.Marker([40.685738, -73.97355], 
+               popup="<strong>Brooklyn Tech. HS - Primary Edu</strong>",
+               tooltip=tooltip).add_to(m),                  
+folium.Marker([40.705132, -74.009258], 
+               popup="<strong>Fullstack Academy Inc - Software Coding</strong>",
+               tooltip=tooltip,
+               icon=folium.Icon(color='purple')).add_to(m)                             
 folium.Marker([40.656583, -73.94471], 
                popup="<strong>Healthfirst - Health Insurance</strong>",
                tooltip=tooltip,
-               icon=folium.Icon(color='green', icon='leaf')).add_to(m)                            
+               icon=folium.Icon(color='green', icon='leaf')).add_to(m)           
+                 
 
 # Create Circle marker
 # folium.CircleMarker(
@@ -68,14 +79,5 @@ folium.GeoJson(overlay, name='New York City').add_to(m)
 m.save('map.html')
 
 m
-
-# Brooklyn, NY (Myrtle Ave & Wyckoff Ave) -- 40.987384, -73.156735
-# Osborne Association -- 	40.693664	-73.992071
-# Women's Prison Assocation --	40.67546	-73.89706
-# Workforce1 Career Center - Downtown Brooklyn --	40.679434	-73936198
-# America Works --	40.705691	-73.996358
-# Medgar Evers College --	40.66624	-73.957349
-# Kingsborough Community College --	40.578349	-73.934465
-# Community Health Network --	40.659026	-73.950207
 
 # Use Icon Libraries to make changes to the icon styling
