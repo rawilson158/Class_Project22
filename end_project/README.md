@@ -12,4 +12,9 @@ The resource locator contains three service categories that are essential for ex
 3. Healthcare Services
 4. Geographic Map ** *(To identify resource location)* **
 
+## External tools and libraries used in the Python-WOW Project:
+1. Folium (Map Library)
+2. OS (Operating System Path)
+3. CSV's (Excel Spreadsheets)
+
 * **(Note)** *The information contained within the resource locator is housed within a data repository, which may not be 100 percent accurate. The database will be refreshed periodically and will be moved to a web-based application at a later date.*
